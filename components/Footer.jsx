@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const EMAIL = "foundacion.clemencia@gmail.com";
 
 export default function Footer() {
@@ -7,8 +9,14 @@ export default function Footer() {
       <div className="container-crc grid gap-12 py-16 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
           <div className="flex items-center gap-3">
-            <span className="flex h-11 w-11 items-center justify-center rounded-full bg-marino-700 font-serif text-sm font-bold text-dorado">
-              CRC
+            <span className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl bg-white p-1">
+              <Image
+                src="/logo-crc-mark.png"
+                alt="Logo de la Fundación CRC: dos figuras abrazándose formando un corazón."
+                width={44}
+                height={46}
+                className="h-auto w-full object-contain"
+              />
             </span>
             <div className="leading-tight">
               <p className="font-serif text-lg font-semibold text-crema">Fundación CRC</p>

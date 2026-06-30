@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const LINKS = [
@@ -21,6 +22,10 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // En el tope la barra flota sobre el hero oscuro: texto claro.
+  // Al hacer scroll el fondo es claro: texto marino.
+  const onDark = !scrolled;
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
@@ -31,12 +36,29 @@ export default function Navbar() {
     >
       <nav className="container-crc flex h-20 items-center justify-between py-4">
         <a href="#inicio" className="flex items-center gap-3" aria-label="Inicio — Fundación CRC">
-          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-marino font-serif text-sm font-bold tracking-tight text-dorado">
-            CRC
+          <span className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl bg-white p-1 shadow-sm ring-1 ring-marino/10">
+            <Image
+              src="/logo-crc-mark.png"
+              alt="Logo de la Fundación CRC: dos figuras abrazándose formando un corazón."
+              width={44}
+              height={46}
+              className="h-auto w-full object-contain"
+              priority
+            />
           </span>
           <span className="hidden flex-col leading-tight sm:flex">
-            <span className="font-serif text-base font-semibold text-marino">Fundación CRC</span>
-            <span className="text-[11px] uppercase tracking-[0.18em] text-marino/55">
+            <span
+              className={`font-serif text-base font-semibold transition-colors ${
+                onDark ? "text-crema" : "text-marino"
+              }`}
+            >
+              Fundación CRC
+            </span>
+            <span
+              className={`text-[11px] uppercase tracking-[0.18em] transition-colors ${
+                onDark ? "text-crema/70" : "text-marino/55"
+              }`}
+            >
               Clemencia Romero Castillo
             </span>
           </span>
@@ -47,7 +69,11 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm font-medium text-marino/75 transition-colors hover:text-terracota"
+              className={`text-sm font-medium transition-colors ${
+                onDark
+                  ? "text-crema/85 hover:text-dorado-light"
+                  : "text-marino/75 hover:text-terracota"
+              }`}
             >
               {l.label}
             </a>
@@ -60,7 +86,9 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-marino/15 text-marino lg:hidden"
+          className={`inline-flex h-11 w-11 items-center justify-center rounded-full border transition-colors lg:hidden ${
+            onDark ? "border-crema/30 text-crema" : "border-marino/15 text-marino"
+          }`}
           aria-label={open ? "Cerrar menú" : "Abrir menú"}
           aria-expanded={open}
         >

@@ -57,9 +57,8 @@ export const metadata = {
       "Creamos redes de acompañamiento para que nadie enfrente un momento difícil en soledad.",
   },
   icons: {
-    icon: [
-      { url: "/favicon.svg", type: "image/svg+xml" },
-    ],
+    icon: [{ url: "/favicon.png", type: "image/png", sizes: "64x64" }],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
   },
 };
 
