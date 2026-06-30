@@ -119,7 +119,10 @@ export default function Home() {
                 Para que nadie enfrente un momento difícil{" "}
                 <span className="italic text-dorado-light">en soledad.</span>
               </h1>
-              <p className="mt-6 max-w-xl text-lg leading-relaxed text-crema/80">
+              <p className="mt-5 font-serif text-xl italic text-dorado-light">
+                Estamos aquí. Contigo.
+              </p>
+              <p className="mt-5 max-w-xl text-lg leading-relaxed text-crema/80">
                 Creamos y sostenemos redes de acompañamiento comunitario en la Ciudad de México.
                 No repartimos despensas y nos vamos: nos sentamos contigo. Es lo que hacía
                 Clemencia, hecho comunidad.

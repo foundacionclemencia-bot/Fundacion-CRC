@@ -28,6 +28,7 @@ Construido con **Next.js 14 (App Router)** y **Tailwind CSS**, listo para desple
 npm install
 npm run optimize-images   # genera /public/clemencia a partir de "fotos de Clemencia"
 node scripts/process-logo.mjs  # genera el logo, isotipo y favicons desde logocrc.png
+node scripts/make-og.mjs       # genera la imagen para compartir (Open Graph)
 npm run dev               # http://localhost:3000
 ```
 

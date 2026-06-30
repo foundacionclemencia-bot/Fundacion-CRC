@@ -2,6 +2,13 @@ import Image from "next/image";
 
 const EMAIL = "foundacion.clemencia@gmail.com";
 
+// Rellena con las URLs reales para que aparezcan los íconos sociales.
+// Mientras estén vacías, no se muestran (evita enlaces rotos/genéricos).
+const SOCIAL = {
+  instagram: "",
+  facebook: "",
+};
+
 export default function Footer() {
   const year = new Date().getFullYear();
   return (
@@ -59,32 +66,38 @@ export default function Footer() {
             </li>
             <li className="text-crema/60">Ciudad de México, México</li>
           </ul>
-          <div className="mt-6 flex gap-3">
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-crema/20 transition-colors hover:border-dorado hover:text-dorado"
-            >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                <rect x="3" y="3" width="18" height="18" rx="5" />
-                <circle cx="12" cy="12" r="4" />
-                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
-              </svg>
-            </a>
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-crema/20 transition-colors hover:border-dorado hover:text-dorado"
-            >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4v-2c0-.6.4-1 1-1z" />
-              </svg>
-            </a>
-          </div>
+          {(SOCIAL.instagram || SOCIAL.facebook) && (
+            <div className="mt-6 flex gap-3">
+              {SOCIAL.instagram && (
+                <a
+                  href={SOCIAL.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-crema/20 transition-colors hover:border-dorado hover:text-dorado"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                  </svg>
+                </a>
+              )}
+              {SOCIAL.facebook && (
+                <a
+                  href={SOCIAL.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-crema/20 transition-colors hover:border-dorado hover:text-dorado"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4v-2c0-.6.4-1 1-1z" />
+                  </svg>
+                </a>
+              )}
+            </div>
+          )}
         </div>
       </div>
 

@@ -7,6 +7,13 @@
     scroll-behavior: smooth;
   }
 
+  /* Compensa el navbar fijo (~81px) al saltar a una sección por ancla. */
+  :target,
+  section[id],
+  [id="inicio"] {
+    scroll-margin-top: 5.5rem;
+  }
+
   body {
     @apply bg-crema text-marino antialiased;
     font-feature-settings: "kern", "liga", "calt";
@@ -73,5 +80,8 @@
     opacity: 1;
     transform: none;
     transition: none;
+  }
+  .animate-fade-up {
+    animation: none !important;
   }
 }
