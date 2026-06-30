@@ -1,0 +1,69 @@
+{
+  "person": "Clemencia",
+  "folder_purpose": "Imágenes organizadas y optimizadas para que una IA constructora de sitios web o asistente de diseño pueda incluirlas de forma inteligente en el sitio de la Fundación CRC.",
+  "images": [
+    {
+      "filename": "clemencia-retrato-principal.jpg",
+      "path": "retratos/clemencia-retrato-principal.jpg",
+      "category": "retratos",
+      "description": "Retrato de primer plano de Clemencia con una expresión suave, sonriendo de forma sutil, apoyando la cabeza en su mano izquierda. Viste una blusa con estampado en tonos morados y blancos. Fondo desenfocado de color neutro.",
+      "suggested_usage": "Foto de perfil principal, sección 'Quiénes somos', biografía o cabecera (Hero) del perfil personal de Clemencia.",
+      "orientation": "Vertical",
+      "alt_text": "Retrato de perfil principal de Clemencia, fundadora de Fundación CRC, apoyando la cabeza en su mano y sonriendo con amabilidad."
+    },
+    {
+      "filename": "clemencia-retrato-azul.jpg",
+      "path": "retratos/clemencia-retrato-azul.jpg",
+      "category": "retratos",
+      "description": "Retrato de medio cuerpo de Clemencia mirando de frente a la cámara, con una blusa azul y un delantal azul con bordes a cuadros blancos y negros. Lleva un collar con un crucifijo. Fondo neutro y luminoso.",
+      "suggested_usage": "Tarjeta de equipo, página de presentación de personal, o sección de rol operativo en la Fundación.",
+      "orientation": "Horizontal (rotada 90 grados)",
+      "alt_text": "Clemencia vestida con blusa y delantal azul, mirando sonriente a la cámara."
+    },
+    {
+      "filename": "clemencia-retrato-medio.jpg",
+      "path": "retratos/clemencia-retrato-medio.jpg",
+      "category": "retratos",
+      "description": "Retrato en interiores de Clemencia, de medio cuerpo, mirando a la cámara. Viste una blusa de manga larga con estampado geométrico blanco y negro. En el fondo se aprecian cuadros familiares y una imagen de la Virgen de Guadalupe.",
+      "suggested_usage": "Galería de fotos personales, sección de historia o entorno familiar de Clemencia.",
+      "orientation": "Horizontal (rotada 90 grados)",
+      "alt_text": "Clemencia en el interior de su hogar, de medio cuerpo, vistiendo blusa estampada en blanco y negro."
+    },
+    {
+      "filename": "clemencia-retrato-sonriente.jpg",
+      "path": "retratos/clemencia-retrato-sonriente.jpg",
+      "category": "retratos",
+      "description": "Primer plano de Clemencia sonriendo alegremente con los ojos ligeramente entornados, vistiendo una camiseta blanca. Posición recostada o apoyada sobre una almohada blanca con detalles celestes.",
+      "suggested_usage": "Foto destacada para citas textuales, sección de testimonio personal o historias inspiradoras de la Fundación.",
+      "orientation": "Horizontal (rotada 90 grados)",
+      "alt_text": "Clemencia sonriendo cálidamente de primer plano en una pose relajada."
+    },
+    {
+      "filename": "clemencia-retrato-cuerpo-entero.jpg",
+      "path": "retratos/clemencia-retrato-cuerpo-entero.jpg",
+      "category": "retratos",
+      "description": "Retrato de tres cuartos a cuerpo entero de Clemencia de pie en su casa, con las manos cruzadas al frente. Viste un pantalón rosa, una blusa sin mangas estampada en tonos azules y verdes, y un chaleco de punto blanco sin mangas. En el fondo se ven marcos con retratos familiares.",
+      "suggested_usage": "Sección sobre el día a día, galería general, o página de biografía ampliada.",
+      "orientation": "Horizontal (rotada 90 grados)",
+      "alt_text": "Clemencia de pie, posando para la cámara con las manos cruzadas, vistiendo blusa azul-verde y chaleco de punto blanco."
+    },
+    {
+      "filename": "clemencia-cocinando.jpg",
+      "path": "actividades/clemencia-cocinando.jpg",
+      "category": "actividades",
+      "description": "Clemencia de pie en una cocina con paredes anaranjadas, vistiendo un delantal azul sobre una camiseta verde. Frente a ella hay ollas de barro, mangos en una bolsa plástica y un tazón con salsa verde. Mira de frente a la cámara con una sonrisa.",
+      "suggested_usage": "Sección sobre proyectos comunitarios, talleres de cocina, actividades diarias de la Fundación CRC, o pasatiempos.",
+      "orientation": "Horizontal (rotada 90 grados)",
+      "alt_text": "Clemencia posando en la cocina con utensilios tradicionales y ollas de barro."
+    },
+    {
+      "filename": "clemencia-en-restaurante.jpg",
+      "path": "actividades/clemencia-en-restaurante.jpg",
+      "category": "actividades",
+      "description": "Clemencia sentada a la mesa en un restaurante elegante con decoraciones coloniales e históricas de fondo. Viste un suéter de cuello alto azul oscuro con detalles bordados negros en los hombros. Frente a ella hay una taza de café o té y cubiertos sobre una servilleta blanca.",
+      "suggested_usage": "Sección de eventos especiales, galería de actividades sociales, reuniones de la Fundación o entrevistas.",
+      "orientation": "Horizontal (rotada 90 grados)",
+      "alt_text": "Clemencia sentada en un restaurante colonial durante una reunión social de la Fundación CRC."
+    }
+  ]
+}
